@@ -1,0 +1,15 @@
+{
+    "name": "betasystem/betasystem",
+    "authors": [
+        {
+            "name": "Rômulo",
+            "email": "rgalvaomachado@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "app\\" : "app/"
+        }
+    }
+}
