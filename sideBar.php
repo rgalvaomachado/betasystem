@@ -28,6 +28,6 @@
             </ul>
         </li>
         <li><a href="orcamentosAdm.php"><em class="fa fa-arrow-right">&nbsp;</em> Orçamentos</a></li>
-        <li><a href="login.html"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
+        <li><a href="login.php"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
     </ul>
 </div><!--/.sidebar-->
