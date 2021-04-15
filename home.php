@@ -1,3 +1,4 @@
+<?php require_once($_SERVER['DOCUMENT_ROOT'].'\class\dbClass.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,8 +37,14 @@
 				<div class="col-xs-6 col-md-3 col-lg-3 no-padding">
 					<div class="panel panel-teal panel-widget border-right">
 						<div class="row no-padding"><em class="fa fa-xl fa-shopping-cart color-blue"></em>
-							<div class="large">120</div>
-							<div class="text-muted">New Orders</div>
+							<div class="large">
+							<?php
+								$sql = new dbClass();
+								$data = $sql->firstResult('SELECT count(*) as qnt FROM radius');
+								echo $data['qnt'];
+							?>
+							</div>
+							<div class="text-muted">Raios</div>
 						</div>
 					</div>
 				</div>
@@ -72,7 +79,7 @@
 				<div class="panel panel-default">
 					<div class="panel-body easypiechart-panel">
 						<h4>New Orders</h4>
-						<div class="easypiechart" id="easypiechart-blue" data-percent="92" ><span class="percent">92%</span></div>
+						<div class="easypiechart" id="easypiechart-blue" data-percent="50" ><span class="percent">50%</span></div>
 					</div>
 				</div>
 			</div>

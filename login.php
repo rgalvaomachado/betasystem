@@ -26,8 +26,8 @@
 								<input class="form-control" placeholder="Password" name="password" type="password" value="">
 							</div>
 							<div class='text-center'>
-								<a href="home.php" class="btn btn-primary">Login</a>	
-								<a href="index.php" class="btn btn-primary">Orçamentos</a>
+								<a href="home.php" class="btn btn-primary">Entrar</a>	
+								<a href="index.php" class="btn btn-primary">Pedidos</a>
 							</div>
 					</form>
 				</div>
