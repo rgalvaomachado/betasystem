@@ -8,26 +8,55 @@
     </div>
     <div class="divider"></div>
     <ul class="nav menu">
-        <!-- <li class="active"> -->
-        <li><a href="home.php"><em class="fa fa-dashboard">&nbsp;</em>Home</a></li>
-        <li><a href="elements.php"><em class="fa fa-toggle-off">&nbsp;</em>Elementos</a></li>
-        <li><a href="panels.php"><em class="fa fa-clone">&nbsp;</em> Alerts &amp; Panels</a></li>
-        <li class="parent "><a data-toggle="collapse" href="#sub-item-1">
-            <em class="fa fa-navicon">&nbsp;</em> Multilevel <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="fa fa-plus"></em></span>
+    <li><a href="home.php"><em class="fa fa-dashboard">&nbsp;</em>Dashboard</a></li>
+        <li class="parent active"><a data-toggle="collapse" href="#sub-item-1">
+            <em class="fa fa-navicon">&nbsp;</em>Status<span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="fa fa-plus"></em></span>
             </a>
             <ul class="children collapse" id="sub-item-1">
-                <li><a class="" href="#">
-                    <span class="fa fa-arrow-right">&nbsp;</span> Sub Item 1
-                </a></li>
-                <li><a class="" href="#">
-                    <span class="fa fa-arrow-right">&nbsp;</span> Sub Item 2
-                </a></li>
-                <li><a class="" href="#">
-                    <span class="fa fa-arrow-right">&nbsp;</span> Sub Item 3
-                </a></li>
+                <li>
+                    <a class="" href="elements.php">
+                        <span class="fa fa-arrow-right">&nbsp;</span>
+                        Atendimento
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="elements.php">
+                        <span class="fa fa-arrow-right">&nbsp;</span>
+                        Orçamento
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="elements.php">
+                        <span class="fa fa-arrow-right">&nbsp;</span>
+                        Projeto
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="elements.php">
+                        <span class="fa fa-arrow-right">&nbsp;</span>
+                        Contrato
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="elements.php">
+                        <span class="fa fa-arrow-right">&nbsp;</span>
+                        Ordem de Produção
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="elements.php">
+                        <span class="fa fa-arrow-right">&nbsp;</span>
+                        Entrega
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="elements.php">
+                        <span class="fa fa-arrow-right">&nbsp;</span>
+                        Instalação
+                    </a>
+                </li>
             </ul>
         </li>
-        <li><a href="orcamentosAdm.php"><em class="fa fa-arrow-right">&nbsp;</em>Pedidos</a></li>
         <li><a href="login.php"><em class="fa fa-power-off">&nbsp;</em>Sair</a></li>
     </ul>
 </div><!--/.sidebar-->
