@@ -4,9 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Betasystem - Login</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/datepicker3.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/datepicker3.css" rel="stylesheet">
+	<link href="../css/styles.css" rel="stylesheet">
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>
 	<script src="js/respond.min.js"></script>
@@ -26,8 +26,7 @@
 								<input class="form-control" placeholder="Password" name="password" type="password" value="">
 							</div>
 							<div class='text-center'>
-								<a href="home.php" class="btn btn-primary">Entrar</a>	
-								<a href="index.php" class="btn btn-primary">Pedidos</a>
+								<a href="../admin/home.php" class="btn btn-primary">Entrar</a>	
 							</div>
 					</form>
 				</div>

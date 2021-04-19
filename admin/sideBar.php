@@ -46,6 +46,24 @@
                 <li>
                     <a class="" href="elements.php">
                         <span class="fa fa-arrow-right">&nbsp;</span>
+                        Remidida
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="elements.php">
+                        <span class="fa fa-arrow-right">&nbsp;</span>
+                        Compra de Materias
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="elements.php">
+                        <span class="fa fa-arrow-right">&nbsp;</span>
+                        Produção
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="elements.php">
+                        <span class="fa fa-arrow-right">&nbsp;</span>
                         Entrega
                     </a>
                 </li>
@@ -57,6 +75,6 @@
                 </li>
             </ul>
         </li>
-        <li><a href="login.php"><em class="fa fa-power-off">&nbsp;</em>Sair</a></li>
+        <li><a href="index.php"><em class="fa fa-power-off">&nbsp;</em>Sair</a></li>
     </ul>
 </div><!--/.sidebar-->

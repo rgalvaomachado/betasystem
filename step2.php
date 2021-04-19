@@ -17,21 +17,15 @@
 <div class="container mt-5">
     <div class="row d-flex justify-content-center align-items-center">
         <div class="col-md-11">
-            <form id="regForm" action="step1.php" method="post" >
-                <h1 id="register">Solicitação</h1>
-                <div class="all-steps">
-                    <span class="step"><i class="fa fa-user" style="opacity: 1"></i></span>
-                    <span class="step"><i class="fa fa-list-alt" style="opacity: 0.2"></i></span>
-                    <span class="step"><i class="fa fa-check" style="opacity: 0.2"></i></span>
-                </div>
-                <div class="tab">
-                    <h3>Qual é seu nome?</h3>
-                    <p> <input placeholder="Name..." name="nome"></p>
-                    <h3>Qual é seu email?</h3>
-                    <p> <input placeholder="Email..." name="email"></p>
-                </div>
-                <button type="submit">Atendimento</button>
-            </form>
+            <h1 id="register">Solicitação</h1>
+            <div class="all-steps">
+                <span class="step"><i class="fa fa-user" style="opacity: 0.2"></i></span>
+                <span class="step"><i class="fa fa-list-alt" style="opacity: 0.2"></i></span>
+                <span class="step"><i class="fa fa-check" style="opacity: 1"></i></span>
+            </div>
+            <div class="thanks-message text-center" id="text-message"> <img src="https://i.imgur.com/O18mJ1K.png" width="100" class="mb-4">
+                <h3>Obrigado</h3> <span>Entraremos em contato com voce em breve!</span>
+            </div>
         </div>
     </div>
 </div>
