@@ -10,7 +10,7 @@
             $this->username = 'root';
             $this->password = 'bitnami';
             $this->host = '192.168.10.5';
-            $this->bd = 'db_shop';
+            $this->bd = 'db';
 
             $this->conections = new PDO('mysql:host='.$this->host.';dbname='.$this->bd,$this->username,$this->password); 
         }
@@ -29,5 +29,12 @@
             $data = $query->fetchAll(PDO::FETCH_ASSOC);
 
             return $data;
+        }
+
+        public function executeSQL($sql){
+            $query = $this->conections->prepare($sql);
+            $query->execute();
+
+            return $query;
         }
     }
