@@ -1,3 +1,24 @@
+<?php
+    require_once($_SERVER['DOCUMENT_ROOT'].'/config/db.php');
+
+    $email = $_POST['email'];
+    $nome = $_POST['nome'];
+
+    $queryUsers = $db->prepare("SELECT * FROM usuarios WHERE email='$email'");
+    $queryUsers->execute();
+    $resultUsers = $queryUsers->fetchAll(PDO::FETCH_ASSOC);
+
+    if(!$resultUsers){
+        $data = [
+            ':nome' => $email,
+            ':email' => $nome,
+            ':grupo' => 1,
+        ];
+        $insert = $db->prepare('INSERT INTO usuarios (nome,email,grupo) VALUES(:nome,:email,:grupo)');
+        $insert->execute($data);
+    }
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,46 +46,46 @@
                     <span class="step"><i class="fa fa-check" style="opacity: 0.2"></i></span>
                 </div>
                 <div class="tab">
-                    <label>Text Input</label>
-                    <input class="form-control" placeholder="Placeholder">
-                    <label>Password</label>
-                    <input type="password" class="form-control">
-                    <label>Checkboxes</label>
+                    <h3>Text input class='entrada' </h3>
+                    <input class='entrada'  class="form-control" placeholder="Placeholder">
+                    <h3>Password</h3>
+                    <input class='entrada'  type="password" class="form-control">
+                    <h3>Checkboxes</h3>
                     <div class="checkbox">
-                        <label>
-                            <input type="checkbox" value="">Checkbox 1
-                        </label>
+                        <h3>
+                            <input class='entrada'  type="checkbox" value="">Checkbox 1
+                        </h3>
                     </div>
                     <div class="checkbox">
-                        <label>
-                            <input type="checkbox" value="">Checkbox 2
-                        </label>
+                        <h3>
+                            <input class='entrada'  type="checkbox" value="">Checkbox 2
+                        </h3>
                     </div>
-                    <label>Radio Buttons</label>
+                    <h3>Radio button class='botao's</h3>
                     <div class="radio">
-                        <label>
-                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Radio Button 1
-                        </label>
+                        <h3>
+                            <input class='entrada'  type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Radio button class='botao' 1
+                        </h3>
                     </div>
                     <div class="radio">
-                        <label>
-                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Radio Button 2
-                        </label>
+                        <h3>
+                            <input class='entrada'  type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Radio button class='botao' 2
+                        </h3>
                     </div>
-                    <label>Selects</label>
+                    <h3>Selects</h3>
                     <select class="form-control">
                         <option>Option 1</option>
                         <option>Option 2</option>
                     </select>
-                    <label>Multiple Selects</label>
+                    <h3>Multiple Selects</h3>
                     <select multiple class="form-control">
                         <option>Option 1</option>
                         <option>Option 2</option>
                     </select>
-                    <label>Text area</label>
+                    <h3>Text area</h3>
                     <textarea class="form-control" rows="3"></textarea>
                 </div>
-                <button type="submit">Orçamento</button>
+                <button class='botao' type="submit">Orçamento</button class='botao'>
             </form>
         </div>
     </div>

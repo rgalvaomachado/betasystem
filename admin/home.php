@@ -1,10 +1,10 @@
-<?php require_once($_SERVER['DOCUMENT_ROOT'].'\class\dbClass.php'); ?>
+<?php require_once($_SERVER['DOCUMENT_ROOT'].'/config/db.php');?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>BETASYSTEM - HOME</title>
+	<title>Betasystem</title>
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
 	<link href="../css/font-awesome.min.css" rel="stylesheet">
 	<link href="../css/datepicker3.css" rel="stylesheet">
@@ -38,10 +38,8 @@
 					<div class="panel panel-teal panel-widget border-right">
 						<div class="row no-padding"><em class="fa fa-xl fa-shopping-cart color-blue"></em>
 							<div class="large">
-							<?php
-								$sql = new dbClass();
-								$data = $sql->firstResult('SELECT count(*) as qnt FROM radius');
-								echo $data['qnt'];
+							<?=
+								10
 							?>
 							</div>
 							<div class="text-muted">Atendimento</div>
@@ -67,7 +65,14 @@
 				<div class="col-xs-6 col-md-3 col-lg-3 no-padding">
 					<div class="panel panel-red panel-widget ">
 						<div class="row no-padding"><em class="fa fa-xl fa-search color-red"></em>
-							<div class="large">25.2k</div>
+							<div class="large">
+							<?php
+								$query = $db->prepare("SELECT count(*) as qtd FROM usuarios where grupo=1");
+								$query->execute();
+								$data = $query->fetch(PDO::FETCH_ASSOC);
+								echo $data['qtd'];
+							?>
+							</div>
 							<div class="text-muted">Clientes</div>
 						</div>
 					</div>

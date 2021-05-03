@@ -18,20 +18,16 @@
 <div class="container mt-5">
     <div class="row d-flex justify-content-center align-items-center">
         <div class="col-md-11">
-            <form id="regForm" action="step1.php" method="post" >
-                <h1 id="register">Solicitação</h1>
+            <form action="step1.php" method="post" >
+                <h1>Solicitação</h1>
                 <div class="all-steps">
                     <span class="step"><i class="fa fa-user" style="opacity: 1"></i></span>
                     <span class="step"><i class="fa fa-list-alt" style="opacity: 0.2"></i></span>
                     <span class="step"><i class="fa fa-check" style="opacity: 0.2"></i></span>
                 </div>
-                <div class="tab">
-                    <h3>Qual é seu nome?</h3>
-                    <p> <input placeholder="Name..." name="nome"></p>
-                    <h3>Qual é seu email?</h3>
-                    <p> <input placeholder="Email..." name="email"></p>
-                </div>
-                <button type="submit">Atendimento</button>
+                <input class='entrada' placeholder="Qual é seu nome?" name="nome" required>
+                <input class='entrada' type="email"placeholder="Qual é seu email?" name="email" required>
+                <button class='botao' type="submit">Atendimento</button>
             </form>
         </div>
     </div>
