@@ -13,6 +13,8 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
 </head>
 <body>
 <div class="container mt-5">
@@ -26,7 +28,12 @@
                     <span class="step"><i class="fa fa-check" style="opacity: 0.2"></i></span>
                 </div>
                 <input class='entrada' placeholder="Qual é seu nome?" name="nome" required>
-                <input class='entrada' type="email"placeholder="Qual é seu email?" name="email" required>
+                <input class='entrada' type="email" placeholder="Qual é seu email?" name="email" required>
+                <input class='entrada' type="text" placeholder="Qual é seu telefone?" name="telefone" id="telefone" required>
+                <script type="text/javascript">
+                    $("#telefone").mask("(00) 00000-0000");
+                </script>
+                </script>
                 <button class='botao' type="submit">Atendimento</button>
             </form>
         </div>

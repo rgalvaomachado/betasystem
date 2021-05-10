@@ -45,46 +45,39 @@
                     <span class="step"><i class="fa fa-list-alt" style="opacity: 1"></i></span>
                     <span class="step"><i class="fa fa-check" style="opacity: 0.2"></i></span>
                 </div>
-                <div class="tab">
-                    <h3>Text input class='entrada' </h3>
-                    <input class='entrada'  class="form-control" placeholder="Placeholder">
-                    <h3>Password</h3>
-                    <input class='entrada'  type="password" class="form-control">
-                    <h3>Checkboxes</h3>
-                    <div class="checkbox">
-                        <h3>
-                            <input class='entrada'  type="checkbox" value="">Checkbox 1
-                        </h3>
-                    </div>
-                    <div class="checkbox">
-                        <h3>
-                            <input class='entrada'  type="checkbox" value="">Checkbox 2
-                        </h3>
-                    </div>
-                    <h3>Radio button class='botao's</h3>
-                    <div class="radio">
-                        <h3>
-                            <input class='entrada'  type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Radio button class='botao' 1
-                        </h3>
-                    </div>
-                    <div class="radio">
-                        <h3>
-                            <input class='entrada'  type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Radio button class='botao' 2
-                        </h3>
-                    </div>
-                    <h3>Selects</h3>
-                    <select class="form-control">
-                        <option>Option 1</option>
-                        <option>Option 2</option>
-                    </select>
-                    <h3>Multiple Selects</h3>
-                    <select multiple class="form-control">
-                        <option>Option 1</option>
-                        <option>Option 2</option>
-                    </select>
-                    <h3>Text area</h3>
-                    <textarea class="form-control" rows="3"></textarea>
-                </div>
+                <table> 
+                    <?php for ($i=0;$i<2;$i++){?>    
+                        <td>
+                            <div class="itens"> 
+                                <table style="width:100%">
+                                    <tr>
+                                        <th><h4>Selecionar</h4></th>
+                                        <th><h4>Imagem</h4></th>
+                                        <th><h4>Dados</h4></th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class='check-produto' type="checkbox" value="">
+                                        </td>
+                                        <td>
+                                            <div class='imagem-produto'>
+                                                <!-- <img class="itens" src="imagem.jpg" alt="Minha Figura"> -->
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input class='entrada-produto' type="number" class="form-control" placeholder="Altura">
+                                            <input class='entrada-produto' type="number" class="form-control" placeholder="Comprimento">
+                                            <select class='entrada-produto' type="number" class="form-control">
+                                                <option> Marrom </option>
+                                                <option> Branco </option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </table>  
+                            </div>   
+                        </td> 
+                    <?php } ?>
+                </table>
                 <button class='botao' type="submit">Orçamento</button class='botao'>
             </form>
         </div>

@@ -50,3 +50,38 @@ h1 {
     font-size: 25px;
     color: #1b439a;
 }
+
+td{
+    text-align: center;
+    margin: 10%;
+}
+
+div.imagem-produto{
+    height: 140px;
+    width: 140px;
+    background-color: #1b439a;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.entrada-produto {
+    padding: 10px;
+    margin: 5px;
+    width: 80%;
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.itens{
+    border: 3px solid #1b439a;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.check-produto{
+    height: 20px;
+    width: 20px;
+}
