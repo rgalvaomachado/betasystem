@@ -39,7 +39,7 @@
     <div class="row d-flex justify-content-center align-items-center">
         <div class="col-md-11">
             <form id="regForm" action="step2.php" method="post">
-                <h1 id="register">Solicitação de Treinamento</h1>
+                <h1 id="register">Solicitação</h1>
                 <div class="all-steps">
                     <span class="step"><i class="fa fa-user" style="opacity: 0.2"></i></span>
                     <span class="step"><i class="fa fa-list-alt" style="opacity: 1"></i></span>
