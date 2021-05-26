@@ -71,6 +71,7 @@
                                                 <option> Marrom </option>
                                                 <option> Branco </option>
                                                 <option> Preto </option>
+                                                <option> Amarelo </option>
                                             </select>
                                         </td>
                                     </tr>
