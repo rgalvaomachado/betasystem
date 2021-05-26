@@ -5,7 +5,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span></button>
-            <a class="navbar-brand"><span>Beta</span>System</a>
+            <a class="navbar-brand"><span>Beta</span>Deivid</a>
         </div>
     </div>
 </nav>

@@ -17,7 +17,7 @@
 <div class="container mt-5">
     <div class="row d-flex justify-content-center align-items-center">
         <div class="col-md-11">
-            <h1 id="register">Solicitação</h1>
+            <h1 id="register">Solicitação treinamento</h1>
             <div class="all-steps">
                 <span class="step"><i class="fa fa-user" style="opacity: 0.2"></i></span>
                 <span class="step"><i class="fa fa-list-alt" style="opacity: 0.2"></i></span>
