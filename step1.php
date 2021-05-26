@@ -70,6 +70,7 @@
                                             <select class='entrada-produto' type="number" class="form-control">
                                                 <option> Marrom </option>
                                                 <option> Branco </option>
+                                                <option> Preto </option>
                                             </select>
                                         </td>
                                     </tr>
